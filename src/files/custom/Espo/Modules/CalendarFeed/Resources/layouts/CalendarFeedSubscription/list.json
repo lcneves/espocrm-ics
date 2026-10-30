@@ -1,0 +1,6 @@
+[
+    {"name": "name", "link": true},
+    {"name": "user"},
+    {"name": "isRevoked", "width": 12},
+    {"name": "createdAt", "width": 20}
+]

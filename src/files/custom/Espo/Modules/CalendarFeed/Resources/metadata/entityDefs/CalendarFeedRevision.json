@@ -1,0 +1,38 @@
+{
+    "fields": {
+        "meetingId": {
+            "type": "varchar",
+            "maxLength": 17,
+            "required": true,
+            "index": true
+        },
+        "revisedAt": {
+            "type": "datetime",
+            "required": true
+        },
+        "sequence": {
+            "type": "int",
+            "required": true,
+            "default": 0
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        }
+    },
+    "links": {},
+    "indexes": {
+        "meetingId": {
+            "columns": ["meetingId"],
+            "unique": true
+        }
+    },
+    "collection": {
+        "orderBy": "revisedAt",
+        "order": "desc"
+    }
+}

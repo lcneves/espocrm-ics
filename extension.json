@@ -1,0 +1,14 @@
+{
+    "module": "CalendarFeed",
+    "name": "Calendar Feed",
+    "description": "Read-only iCalendar subscription feeds for EspoCRM meetings.",
+    "author": "Lucas Neves",
+    "bundled": true,
+    "acceptableVersions": [
+        ">=10.0.0 <11.0.0"
+    ],
+    "php": [
+        ">=8.3.0 <8.6.0"
+    ],
+    "scripts": []
+}

@@ -1,0 +1,97 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "maxLength": 255,
+            "required": true,
+            "tooltip": true
+        },
+        "user": {
+            "type": "link",
+            "required": true,
+            "view": "views/fields/user",
+            "tooltip": true
+        },
+        "tokenHash": {
+            "type": "varchar",
+            "maxLength": 64,
+            "readOnly": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutFiltersDisabled": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "textFilterDisabled": true,
+            "directAccessDisabled": true,
+            "customizationDisabled": true
+        },
+        "subscriptionUrl": {
+            "type": "url",
+            "notStorable": true,
+            "readOnly": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutFiltersDisabled": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "customizationDisabled": true
+        },
+        "isRevoked": {
+            "type": "bool",
+            "default": false,
+            "readOnly": true
+        },
+        "revokedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        }
+    },
+    "links": {
+        "user": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "indexes": {
+        "tokenHash": {
+            "columns": ["tokenHash"],
+            "unique": true
+        },
+        "user": {
+            "columns": ["userId", "deleted"]
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": ["name"]
+    }
+}

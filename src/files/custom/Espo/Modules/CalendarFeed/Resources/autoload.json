@@ -1,0 +1,12 @@
+{
+    "psr-4": {
+        "Sabre\\VObject\\": "custom/Espo/Modules/CalendarFeed/vendor/sabre/vobject/lib/",
+        "Sabre\\Xml\\": "custom/Espo/Modules/CalendarFeed/vendor/sabre/xml/lib/",
+        "Sabre\\Uri\\": "custom/Espo/Modules/CalendarFeed/vendor/sabre/uri/lib/"
+    },
+    "autoloadFileList": [
+        "custom/Espo/Modules/CalendarFeed/vendor/sabre/uri/lib/functions.php",
+        "custom/Espo/Modules/CalendarFeed/vendor/sabre/xml/lib/Deserializer/functions.php",
+        "custom/Espo/Modules/CalendarFeed/vendor/sabre/xml/lib/Serializer/functions.php"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "pastMonths": "Past months",
+        "futureMonths": "Future months",
+        "includeNotHeld": "Include meetings marked Not Held"
+    },
+    "messages": {
+        "settingsIntro": "A meeting is exported when its time range overlaps this window. Planned and Held meetings are included. Not Held meetings are left out unless you enable the option below. Changes apply on the next calendar refresh."
+    }
+}

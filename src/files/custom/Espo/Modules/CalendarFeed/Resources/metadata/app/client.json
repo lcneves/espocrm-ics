@@ -1,0 +1,6 @@
+{
+    "scriptList": [
+        "__APPEND__",
+        "client/custom/modules/calendar-feed/lib/init.js"
+    ]
+}

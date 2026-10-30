@@ -1,0 +1,8 @@
+{
+    "name": "espocrm/calendar-feed",
+    "description": "iCalendar dependencies for the Calendar Feed extension.",
+    "require": {
+        "php": ">=8.3",
+        "sabre/vobject": "~4.5.4"
+    }
+}

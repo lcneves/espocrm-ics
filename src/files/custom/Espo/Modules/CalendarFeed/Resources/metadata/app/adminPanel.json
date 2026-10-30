@@ -1,0 +1,24 @@
+{
+    "calendarFeed": {
+        "label": "Calendar Feed",
+        "iconClass": "fas fa-calendar-alt",
+        "order": 26,
+        "itemList": [
+            {
+                "url": "#CalendarFeedSubscription",
+                "label": "Calendar Subscriptions",
+                "iconClass": "fas fa-link",
+                "description": "calendarFeedSubscriptions",
+                "order": 1
+            },
+            {
+                "url": "#Admin/calendarFeedSettings",
+                "label": "Calendar Feed Settings",
+                "iconClass": "fas fa-sliders-h",
+                "description": "calendarFeedSettings",
+                "view": "modules/calendar-feed/views/admin/settings",
+                "order": 2
+            }
+        ]
+    }
+}

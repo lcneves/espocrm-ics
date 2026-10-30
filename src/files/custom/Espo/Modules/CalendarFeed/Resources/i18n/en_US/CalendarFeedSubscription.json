@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "name": "Name",
+        "user": "User",
+        "isRevoked": "Revoked",
+        "revokedAt": "Revoked At",
+        "createdAt": "Created",
+        "modifiedAt": "Modified",
+        "subscriptionUrl": "Subscription URL"
+    },
+    "labels": {
+        "Create CalendarFeedSubscription": "Create Subscription",
+        "Regenerate URL": "Regenerate URL",
+        "Revoke": "Revoke"
+    },
+    "tooltips": {
+        "name": "A label for this subscription, such as the device or calendar application.",
+        "user": "Meetings for this user are exported. The URL is a secret and is shown only once."
+    },
+    "messages": {
+        "subscriptionUrlTitle": "Subscription URL",
+        "subscriptionUrlOnce": "Copy this URL into Apple Calendar, Google Calendar, or Outlook. It will not be shown again.",
+        "revokeConfirm": "Revoke this subscription? Calendar applications using it will stop updating.",
+        "revoked": "Subscription revoked.",
+        "urlCopied": "URL copied."
+    }
+}

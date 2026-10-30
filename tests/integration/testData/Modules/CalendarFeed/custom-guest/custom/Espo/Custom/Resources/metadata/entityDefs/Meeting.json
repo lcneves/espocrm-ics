@@ -1,0 +1,29 @@
+{
+    "fields": {
+        "guests": {
+            "type": "linkMultiple",
+            "columns": {
+                "status": "acceptanceStatus"
+            },
+            "layoutDetailDisabled": true
+        }
+    },
+    "links": {
+        "guests": {
+            "type": "hasMany",
+            "entity": "CalendarFeedGuest",
+            "relationName": "CalendarFeedGuestMeeting",
+            "foreign": "meetings",
+            "additionalColumns": {
+                "status": {
+                    "type": "varchar",
+                    "len": 36,
+                    "default": "None"
+                }
+            },
+            "columnAttributeMap": {
+                "status": "acceptanceStatus"
+            }
+        }
+    }
+}

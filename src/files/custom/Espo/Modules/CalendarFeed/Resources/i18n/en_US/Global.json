@@ -1,0 +1,8 @@
+{
+    "scopeNames": {
+        "CalendarFeedSubscription": "Calendar Subscription"
+    },
+    "scopeNamesPlural": {
+        "CalendarFeedSubscription": "Calendar Subscriptions"
+    }
+}

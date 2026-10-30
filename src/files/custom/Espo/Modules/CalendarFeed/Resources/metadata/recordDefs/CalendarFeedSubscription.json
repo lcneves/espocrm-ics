@@ -1,0 +1,8 @@
+{
+    "beforeCreateHookClassNameList": [
+        "Espo\\Modules\\CalendarFeed\\Classes\\Record\\CalendarFeedSubscription\\BeforeCreate"
+    ],
+    "outputFilterClassNameList": [
+        "Espo\\Modules\\CalendarFeed\\Classes\\Record\\CalendarFeedSubscription\\OutputFilter"
+    ]
+}

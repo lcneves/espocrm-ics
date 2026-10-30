@@ -1,0 +1,9 @@
+[
+    {
+        "rows": [
+            [{"name": "name"}, {"name": "user"}],
+            [{"name": "isRevoked"}, {"name": "revokedAt"}],
+            [{"name": "createdAt"}, {"name": "modifiedAt"}]
+        ]
+    }
+]

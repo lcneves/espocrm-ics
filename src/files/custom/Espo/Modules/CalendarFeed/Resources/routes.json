@@ -1,0 +1,28 @@
+[
+    {
+        "route": "/CalendarFeed/settings",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\CalendarFeed\\Tools\\Settings\\Api\\GetSettings"
+    },
+    {
+        "route": "/CalendarFeed/settings",
+        "method": "put",
+        "actionClassName": "Espo\\Modules\\CalendarFeed\\Tools\\Settings\\Api\\PutSettings"
+    },
+    {
+        "route": "/CalendarFeedSubscription/:id/revoke",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\CalendarFeed\\Tools\\Subscription\\Api\\PostRevoke"
+    },
+    {
+        "route": "/CalendarFeedSubscription/:id/regenerate",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\CalendarFeed\\Tools\\Subscription\\Api\\PostRegenerate"
+    },
+    {
+        "route": "/CalendarFeed/:token",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\CalendarFeed\\Tools\\Feed\\Api\\GetFeed",
+        "noAuth": true
+    }
+]

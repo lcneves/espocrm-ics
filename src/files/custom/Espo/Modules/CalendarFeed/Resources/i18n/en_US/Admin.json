@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "Calendar Feed": "Calendar Feed",
+        "Calendar Subscriptions": "Subscriptions",
+        "Calendar Feed Settings": "Settings"
+    },
+    "descriptions": {
+        "calendarFeedSubscriptions": "Generate and revoke per-user calendar subscription URLs.",
+        "calendarFeedSettings": "Choose how far back and forward meeting subscriptions reach."
+    }
+}

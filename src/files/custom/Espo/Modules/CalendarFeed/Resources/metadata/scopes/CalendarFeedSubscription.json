@@ -1,0 +1,13 @@
+{
+    "entity": true,
+    "object": true,
+    "acl": true,
+    "aclPortal": false,
+    "tab": false,
+    "module": "CalendarFeed",
+    "type": "Base",
+    "customizable": false,
+    "importable": false,
+    "stream": false,
+    "notification": false
+}
