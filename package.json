@@ -1,6 +1,6 @@
 {
   "name": "espocrm-ext-calendar-feed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read-only iCalendar subscription feeds for EspoCRM meetings.",
   "scripts": {
     "sa": "vendor/bin/phpstan",

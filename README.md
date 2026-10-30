@@ -11,7 +11,7 @@ The feed is a snapshot. It does not send invitations, and it does not change mee
 
 ## Install
 
-1. Download `calendar-feed-1.0.0.zip` from the release, or build it with `npm run extension`. The package is written to `build/`.
+1. Download `calendar-feed-1.0.1.zip` from the release, or build it with `npm run extension`. The package is written to `build/`.
 2. In EspoCRM, open Administration → Extensions, upload the ZIP, and install it.
 3. The installer rebuilds the database. Subscription tables are created as part of that.
 4. Set **site URL** in Administration → Settings to the public address of this EspoCRM. Subscription links are based on it.
