@@ -3,5 +3,8 @@
     "views": {
         "detail": "modules/calendar-feed/views/calendar-feed-subscription/record/detail",
         "edit": "modules/calendar-feed/views/calendar-feed-subscription/record/edit"
+    },
+    "modalViews": {
+        "edit": "modules/calendar-feed/views/calendar-feed-subscription/modals/edit"
     }
 }

@@ -11,7 +11,7 @@ The feed is a snapshot. It does not send invitations, and it does not change mee
 
 ## Install
 
-1. Download `calendar-feed-1.0.1.zip` from the release, or build it with `npm run extension`. The package is written to `build/`.
+1. Download `calendar-feed-1.1.0.zip` from the release, or build it with `npm run extension`. The package is written to `build/`.
 2. In EspoCRM, open Administration → Extensions, upload the ZIP, and install it.
 3. The installer rebuilds the database. Subscription tables are created as part of that.
 4. Set **site URL** in Administration → Settings to the public address of this EspoCRM. Subscription links are based on it.
@@ -46,7 +46,7 @@ Planned and Held meetings are included. Meetings marked Not Held are left out un
 
 Participants come from User, Contact, and Lead, and from any other meeting attendee link that stores an acceptance status. Account, opportunity, case, and the parent record are not listed as attendees. The description includes the full participant list. An email address is included only when the subscription's user is allowed to see it.
 
-Stock EspoCRM meetings have no location field, so the feed does not add one.
+Stock EspoCRM meetings have no location field, so the feed does not add one. When a meeting has a join URL, that address is the event link. Otherwise the link opens the meeting in EspoCRM.
 
 ## Development
 

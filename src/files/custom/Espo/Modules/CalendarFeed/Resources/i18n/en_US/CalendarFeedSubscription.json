@@ -22,6 +22,7 @@
         "subscriptionUrlOnce": "Copy this URL into Apple Calendar, Google Calendar, or Outlook. It will not be shown again.",
         "revokeConfirm": "Revoke this subscription? Calendar applications using it will stop updating.",
         "revoked": "Subscription revoked.",
-        "urlCopied": "URL copied."
+        "urlCopied": "URL copied.",
+        "urlCopyFailed": "Could not copy the URL. Select it and copy it manually."
     }
 }

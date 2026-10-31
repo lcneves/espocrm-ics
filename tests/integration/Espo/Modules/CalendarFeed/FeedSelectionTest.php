@@ -135,4 +135,28 @@ class FeedSelectionTest extends BaseTestCase
         $this->assertStringContainsString('DTEND:20260308T073000Z', $ics);
         $this->assertStringNotContainsString('LOCATION:', $ics);
     }
+
+    public function testJoinUrlIsUsedAsTheEventUrl(): void
+    {
+        $ana = $this->makeUser('ana-join', 'Ana', 'Silva', 'ana.join@example.com', $this->meetingAcl());
+
+        $this->makeMeeting('In the office', $ana->getId(), $this->at('+2 days'), $this->at('+2 days +1 hour'));
+        $this->makeMeeting(
+            'Video call',
+            $ana->getId(),
+            $this->at('+3 days'),
+            $this->at('+3 days +1 hour'),
+            ['joinUrl' => 'https://meet.example/abc'],
+        );
+
+        $ics = $this->unfold($this->calendar($this->subscribe($ana->getId())));
+
+        $office = $this->eventBlock($ics, 'In the office');
+        $this->assertMatchesRegularExpression('~URL;VALUE=URI:http://localhost/#Meeting/view/~', $office);
+        $this->assertStringNotContainsString('meet.example', $office);
+
+        $video = $this->eventBlock($ics, 'Video call');
+        $this->assertStringContainsString('URL;VALUE=URI:https://meet.example/abc', $video);
+        $this->assertStringNotContainsString('#Meeting/view/', $video);
+    }
 }

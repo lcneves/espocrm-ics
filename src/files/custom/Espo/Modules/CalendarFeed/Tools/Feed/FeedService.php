@@ -135,7 +135,7 @@ class FeedService
             $summary,
             (string) $meeting->get('description'),
             $location,
-            $this->urls->meeting($meeting->getId()),
+            $this->eventUrl($meeting),
             $mapped['allDay'],
             $mapped['start'],
             $mapped['end'],
@@ -145,6 +145,21 @@ class FeedService
             $stamp['sequence'],
             $participants,
         );
+    }
+
+    private function eventUrl(Entity $meeting): string
+    {
+        $joinUrl = $meeting->get('joinUrl');
+
+        if (is_string($joinUrl)) {
+            $joinUrl = trim($joinUrl);
+
+            if ($joinUrl !== '' && !preg_match('/[\r\n]/', $joinUrl)) {
+                return $joinUrl;
+            }
+        }
+
+        return $this->urls->meeting($meeting->getId());
     }
 
     private function stringOrNull(mixed $value): ?string
